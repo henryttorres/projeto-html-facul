@@ -95,6 +95,17 @@
         a:hover {
             color: #5d4037;
         }
+
+        .navbar-brand img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px; 
+        }
+        .banner-img {
+            width: 1200px;
+            height: 300px;
+            object-fit: cover; 
+        }
     </style>
 </head>
 <body>
@@ -107,54 +118,8 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" onclick="mostrarSecao('secao-home')">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="mostrarSecao('secao-sobre')">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="mostrarSecao('secao-contato')">Contato</a>
-                    </li>
-                </ul>
-            </div>
         </nav>
         <img class="banner-img" src="banner.jpg" alt="Banner da Empresa">
     </header>
-    <main class="bg-light p-3">
-        <section id="secao-home" class="section-container active container">
-            <h2>Madureira Imóveis</h2>
-            <p>Bem-vindo à Madureira Imóveis, onde qualidade e design se encontram.</p>
-        </section>
-        <section id="secao-sobre" class="section-container container">
-            <h2>Sobre Nós</h2>
-            <p>Somos uma empresa dedicada a fornecer móveis de alta qualidade, feitos para durar e se adequar ao seu estilo de vida.</p>
-        </section>
-        <section id="secao-contato" class="section-container container">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco para obter mais informações sobre nossos produtos e serviços.</p>
-            <address>
-                Email: contato@madureira-imoveis.com<br>
-                Telefone: (81) 5690-6969
-            </address>
-        </section>
-    </main>
-    <footer class="footer">
-        <p>&copy; 2021 Madureira Imóveis. Todos os direitos reservados.</p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        function mostrarSecao(secaoId) {
-            document.querySelectorAll('.section-container').forEach(function(secao) {
-                secao.classList.remove('active');
-            });
-
-            document.getElementById(secaoId).classList.add('active');
-        }
-    </script>
 </body>
 </html>
